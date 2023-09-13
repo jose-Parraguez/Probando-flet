@@ -5,7 +5,7 @@ def main(page: ft.Page):
     page.add(ft.Text(value= "Hola mundo!", color= "Blue"))
 
     page.add(ft.Row([ft.Text("Usuario"),
-     ft.TextField(""),]))
+     ft.TextField(label ="", autofocus=True),]))
 
     page.add(ft.Row([ft.Text("Contraseña"),
      ft.TextField( password=True, can_reveal_password=True),]))
